@@ -5,7 +5,7 @@
 
 <jsp:useBean id="entries" class="java.util.ArrayList" scope="request"/>
 
-This is the <b>Guestbook Mvn 7</b> portlet in View mode.
+This is the <b>Guestbook Mvn Demo</b> portlet in View mode.
 
 	<portlet:renderURL var="addEntryURL" >	
 		<portlet:param name="mvcPath" value="/html/guestbook/edit_entry.jsp"/>		
