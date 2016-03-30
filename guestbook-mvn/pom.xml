@@ -135,7 +135,12 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.5.11</version>
-		</dependency>		
+		</dependency>	
+		<dependency>
+			<groupId>com.test</groupId>
+			<artifactId>test</artifactId>
+			<version>1.0</version>
+		</dependency>	
 	</dependencies>
 <!-- <profiles>
 <profile>
@@ -169,7 +174,7 @@
 		<liferay.app.server.lib.global.dir>D:\LiferayTraining\liferay-portal-6.2-ce-ga3\tomcat-7.0.42\lib\ext</liferay.app.server.lib.global.dir>
 		<liferay.app.server.portal.dir>D:\LiferayTraining\liferay-portal-6.2-ce-ga3\tomcat-7.0.42\webapps\ROOT</liferay.app.server.portal.dir>
 	</properties>
-	<!-- 
+	
 	<distributionManagement>
 		<repository>
 			<id>liferay-releases</id>
@@ -178,8 +183,32 @@
 		<snapshotRepository>
 			<id>liferay-snapshots</id>
 			<name>Liferay Snapshots Repository</name>
-			<url>http://localhost:8081/nexus/content/repositories/liferay-snapshots</url>
+			<url>http://localhost:8090/nexus/content/repositories/liferay-snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
-	 -->
+
+
+	<repositories>
+    		<repository>
+        		<id>liferay-releases</id>
+        		<name>Liferay Releases</name>
+        		<url>http://localhost:8090/nexus/content/repositories/liferay-releases</url>
+        	</repository>
+    		<repository>
+        		<id>liferay-snapshots</id>
+        		<name>Liferay Snapshots</name>
+        		<url>http://localhost:8090/nexus/content/repositories/liferay-snapshots</url>
+        	</repository>
+	</repositories>
+
+<!--
+	<pluginRepositories>
+    		<pluginRepository>
+        		<id>liferay-ce</id>
+        		<url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
+        		<releases><enabled>true</enabled></releases>
+        		<snapshots><enabled>true</enabled></snapshots>
+    		</pluginRepository>
+	</pluginRepositories>-->
+	
 </project>
