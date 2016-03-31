@@ -39,7 +39,7 @@ public class GuestbookPortlet extends MVCPortlet {
 			String[] guestbookEntries = prefs.getValues("guestbook-entries",
 			          new String[1]);
 
-	       ArrayList<String> entries = new ArrayList<String>();
+	       List<String> entries = new ArrayList<String>();
 
 	       if (guestbookEntries != null) {
 
